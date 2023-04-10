@@ -10,6 +10,8 @@ packages = [{include = "movies_list_api"}]
 python = "^3.10"
 flask = "^2.2.3"
 flake8 = "^6.0.0"
+pandas = "^2.0.0"
+sqlalchemy = "^2.0.9"
 
 
 [build-system]
