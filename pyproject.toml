@@ -4,7 +4,7 @@ version = "0.1.0"
 description = ""
 authors = ["Pedro Link <pedrohplink@gmail.com>"]
 readme = "README.md"
-packages = [{include = "movies_list_api"}]
+packages = [{include = "src"}]
 
 [tool.poetry.dependencies]
 python = "^3.10"
@@ -12,6 +12,7 @@ flask = "^2.2.3"
 flake8 = "^6.0.0"
 pandas = "^2.0.0"
 sqlalchemy = "^2.0.9"
+pytest-json = "^0.4.0"
 
 
 [build-system]

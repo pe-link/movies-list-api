@@ -1,9 +1,11 @@
+from pathlib import Path
+
+import pandas as pd
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
 from sqlalchemy.pool import StaticPool
-from pathlib import Path
-import pandas as pd
-from models import BaseModel, Producer, Movie
+
+from src.models import BaseModel, Movie, Producer
 
 
 class SQLiteDataBase:

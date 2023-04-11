@@ -1,7 +1,7 @@
 from sqlalchemy.orm import Session
 
-from models import Producer, Movie, TimeInterval, WinIntervalTimes
-from utils.enum import IntervalsRange
+from src.models import Movie, Producer, TimeInterval, WinIntervalTimes
+from src.utils.enum import IntervalsRange
 
 
 class ProducersRepository:

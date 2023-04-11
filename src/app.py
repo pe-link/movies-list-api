@@ -1,9 +1,11 @@
-from flask import Flask, jsonify, Response
 from typing import Any
-from config import config
-from database import SQLiteDataBase
+
+from flask import Flask, Response, jsonify
 from sqlalchemy.orm import Session
-from services import ProducersService
+
+from src.config import config
+from src.database import SQLiteDataBase
+from src.services import ProducersService
 
 
 class App(Flask):
