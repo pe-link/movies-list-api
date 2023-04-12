@@ -54,19 +54,22 @@ https://python-poetry.org/docs/
 - `make run-tests`
 
 ```
-===================== test session starts ======================
+========================================= test session starts ==========================================
 platform linux -- Python 3.10.0, pytest-7.3.0, pluggy-1.0.0 -- /home/tqi_plink/.cache/pypoetry/virtualenvs/movies-list-api-0VPrr73E-py3.10/bin/python
 cachedir: .pytest_cache
 rootdir: /home/tqi_plink/movies-list-api
 configfile: pytest.ini
 plugins: json-0.4.0
-collected 3 items                                              
+collected 5 items                                                                                      
 
-tests/test_movies_list.py::test_get_winners_interval PASSED [ 33%]
-tests/test_movies_list.py::test_find_interval_range PASSED [ 66%]
-tests/test_movies_list.py::test_insert_csv_database PASSED [100%]
+tests/test_movies_list.py::test_get_winners_interval_api PASSED                                  [ 20%]
+tests/test_movies_list.py::test_find_interval_range PASSED                                       [ 40%]
+tests/test_movies_list.py::test_insert_csv_database PASSED                                       [ 60%]
+tests/test_movies_list.py::test_find_interval_range_max_and_min_intervals PASSED                 [ 80%]
+tests/test_movies_list.py::test_mock_consecutive_wins_min_and_max_intervals PASSED               [100%]
 
-====================== 3 passed in 0.78s =======================
+========================================== 5 passed in 0.76s ===========================================
+
 
 ```
 
