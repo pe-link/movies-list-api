@@ -22,6 +22,7 @@ https://python-poetry.org/docs/
 ## Install dependencies
 - `make install`
 
+## Enter in virutalenv
 If you have already installed the dependencies and you are not connected to virutalenv, just run this command: </br> 
 <b>Note:</b> If you run `make install`, you don't need to run this command.
 - `make env`
