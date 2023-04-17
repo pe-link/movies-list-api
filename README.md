@@ -70,12 +70,10 @@ collected 5 items
 tests/test_movies_list.py::test_get_winners_interval_api PASSED                                  [ 20%]
 tests/test_movies_list.py::test_find_interval_range PASSED                                       [ 40%]
 tests/test_movies_list.py::test_insert_csv_database PASSED                                       [ 60%]
-tests/test_movies_list.py::test_find_interval_range_max_and_min_intervals PASSED                 [ 80%]
+tests/test_movies_list.py::test_find_interval_range_max_and_min_intervals_in_memory_db PASSED    [ 80%]
 tests/test_movies_list.py::test_mock_consecutive_wins_min_and_max_intervals PASSED               [100%]
 
-========================================== 5 passed in 0.76s ===========================================
-
-
+========================================== 5 passed in 0.84s ===========================================
 ```
 
 ## Run Lint
