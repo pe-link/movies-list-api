@@ -1,4 +1,4 @@
-name: Pytest Workflow
+name: Pytest Workflow with Flake8
 
 on: [pull_request]
 
@@ -20,6 +20,9 @@ jobs:
         python -m pip install --upgrade pip
         pip install poetry
         poetry install
+
+    - name: Run Flake8
+      run: poetry run flake8
 
     - name: Run pytest
       run: poetry run pytest
