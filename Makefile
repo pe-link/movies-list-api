@@ -19,3 +19,6 @@ install:
 
 run-tests:
 	@pytest -vvv
+
+env:
+	@poetry shell
