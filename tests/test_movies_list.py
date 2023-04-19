@@ -82,19 +82,15 @@ def test_find_interval_range_max_and_min_intervals_in_memory_db(memory_db):
     memory_db.commit()
     win_interval_times = ProducersService.find_interval_range(memory_db)
 
-    """
-    In this test, the list of producers is sorted and taking their respective values from the database and comparing them
-    """
-
     # MIN INTERVALS
     assert len(win_interval_times.min_intervals) == 1
-    assert sorted(win_interval_times.min_intervals, key=lambda x: x.producer_name)[0].producer_name == 'Producer 1'
-    assert sorted(win_interval_times.min_intervals, key=lambda x: x.producer_name)[0].interval == 1
+    assert win_interval_times.min_intervals[0].producer_name == 'Producer 1'
+    assert win_interval_times.min_intervals[0].interval == 1
 
     # MAX INTERVALS
     assert len(win_interval_times.max_intervals) == 1
-    assert sorted(win_interval_times.max_intervals, key=lambda x: x.producer_name)[0].producer_name == 'Producer 3'
-    assert sorted(win_interval_times.max_intervals, key=lambda x: x.producer_name)[0].interval == 19
+    assert win_interval_times.max_intervals[0].producer_name == 'Producer 3'
+    assert win_interval_times.max_intervals[0].interval == 19
 
 
 def test_mock_consecutive_wins_min_and_max_intervals():
