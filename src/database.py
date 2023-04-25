@@ -27,8 +27,8 @@ class SQLiteDataBase:
             producers_list: list[Producer] = []
             for producer in producers:
                 if producer not in producers_names:
-                    novo_produtor = Producer(name=producer)
-                    producers_names[producer] = novo_produtor
+                    new_producer = Producer(name=producer)
+                    producers_names[producer] = new_producer
                 producers_list.append(producers_names[producer])
 
             new_movie = Movie(title=movie.title, year=movie.year, studios=movie.studios,
